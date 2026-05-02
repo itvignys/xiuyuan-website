@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杭州秀源智能科技有限公司 - 秀源智修，算力无忧</title>
+    <meta name="description" content="杭州秀源智能科技有限公司，专业提供显卡维修、设备维保、算力租赁和显卡供货服务。工厂化批量维修，原厂级交付标准，最长质保三年。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 48 48" fill="none">
+                        <rect x="4" y="12" width="40" height="24" rx="4" fill="url(#logoGrad)" opacity="0.9"/>
+                        <rect x="8" y="16" width="14" height="16" rx="2" fill="rgba(255,255,255,0.25)"/>
+                        <rect x="26" y="16" width="14" height="16" rx="2" fill="rgba(255,255,255,0.15)"/>
+                        <circle cx="15" cy="24" r="3" fill="white"/>
+                        <circle cx="33" cy="24" r="3" fill="white" opacity="0.5"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="4" y1="12" x2="44" y2="36">
+                                <stop stop-color="#0ea5e9"/>
+                                <stop offset="1" stop-color="#0284c7"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">秀源智能</span>
+                    <span class="logo-en">XIUYUAN INTELLIGENT</span>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#services" class="nav-link">服务项目</a></li>
+                <li><a href="#about" class="nav-link">关于我们</a></li>
+                <li><a href="#cases" class="nav-link">客户案例</a></li>
+                <li><a href="#news" class="nav-link">新闻动态</a></li>
+                <li><a href="#contact" class="nav-link">联系我们</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:400-888-8888" class="btn btn-outline">
+                    <i class="fas fa-phone-alt"></i>
+                    联系我们
+                </a>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 首屏 -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-particles" id="particles"></div>
+            <div class="hero-glow"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                专业GPU维修与算力服务提供商
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">秀源智修</span>
+                <span class="title-line accent">算力无忧</span>
+            </h1>
+            <p class="hero-desc">
+                工厂化批量维修，原厂级交付标准，最长质保三年。<br>
+                为您的显卡与算力设备提供全生命周期专业服务。
+            </p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary btn-lg">
+                    了解服务
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-lg">
+                    立即咨询
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50000">0</div>
+                    <div class="stat-label">累计维修显卡</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label">维修成功率</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-suffix">年</div>
+                    <div class="stat-label">最长质保期</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">服务企业客户</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>向下滚动</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务板块 -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">核心服务</span>
+                <h2 class="section-title">四大主营业务</h2>
+                <p class="section-desc">
+                    深耕GPU领域多年，为客户提供从硬件维修到算力租赁的一站式解决方案
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-delay="0">
+                    <div class="service-icon">
+                        <div class="icon-bg">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title">显卡维修</h3>
+                    <p class="service-desc">
+                        专业维修NVIDIA、AMD等全系列显卡，涵盖核心级维修、显存更换、供电修复等高难度故障处理。
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>核心级BGA返修</li>
+                        <li><i class="fas fa-check"></i>显存颗粒更换</li>
+                        <li><i class="fas fa-check"></i>供电模块修复</li>
+                        <li><i class="fas fa-check"></i>BIOS刷写恢复</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        了解详情 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="100">
+                    <div class="service-icon">
+                        <div class="icon-bg icon-bg-2">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title">设备维保</h3>
+                    <p class="service-desc">
+                        提供服务器、工作站等算力设备的定期维护保养服务，确保设备稳定运行，延长使用寿命。
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>定期巡检维护</li>
+                        <li><i class="fas fa-check"></i>故障预警监测</li>
+                        <li><i class="fas fa-check"></i>清洁除尘保养</li>
+                        <li><i class="fas fa-check"></i>固件升级服务</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        了解详情 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="200">
+                    <div class="service-icon">
+                        <div class="icon-bg icon-bg-3">
+                            <i class="fas fa-server"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title">算力租赁</h3>
+                    <p class="service-desc">
+                        灵活的GPU算力租赁方案，满足AI训练、图形渲染、科学计算等多种场景需求，按需付费。
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>A100/H100高端算力</li>
+                        <li><i class="fas fa-check"></i>弹性按需扩容</li>
+                        <li><i class="fas fa-check"></i>7×24小时运维</li>
+                        <li><i class="fas fa-check"></i>多节点集群方案</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        了解详情 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-delay="300">
+                    <div class="service-icon">
+                        <div class="icon-bg icon-bg-4">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title">显卡供货</h3>
+                    <p class="service-desc">
+                        批量供应全新及翻新显卡，与多家品牌厂商建立长期合作，为企业提供稳定可靠的硬件采购渠道。
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i>全新正品保障</li>
+                        <li><i class="fas fa-check"></i>翻新严格质检</li>
+                        <li><i class="fas fa-check"></i>批量采购优惠</li>
+                        <li><i class="fas fa-check"></i>长期供货协议</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        了解详情 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 优势板块 -->
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages-layout">
+                <div class="advantages-content">
+                    <span class="section-tag">核心优势</span>
+                    <h2 class="section-title">为什么选择秀源智能</h2>
+                    <p class="advantages-lead">
+                        我们坚持"工厂化批量维修，原厂级交付标准"的服务理念，以专业技术和严格品控赢得客户信赖。
+                    </p>
+                    <div class="advantage-list">
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="advantage-info">
+                                <h4>工厂化批量维修</h4>
+                                <p>标准化流水线作业，日均处理能力超千片，满足企业级批量维修需求</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="advantage-info">
+                                <h4>原厂级交付标准</h4>
+                                <p>严格按照原厂规范执行维修流程，每一道工序都有质检把关</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="advantage-info">
+                                <h4>最长质保三年</h4>
+                                <p>行业领先的质保承诺，让您无后顾之忧，安心使用修复后的设备</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="advantage-info">
+                                <h4>快速响应交付</h4>
+                                <p>7×24小时接单，标准维修3-5个工作日交付，加急服务可当日完成</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages-visual">
+                    <div class="visual-card">
+                        <div class="visual-header">
+                            <div class="visual-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="visual-title">维修流程</span>
+                        </div>
+                        <div class="visual-steps">
+                            <div class="v-step active">
+                                <div class="v-step-num">01</div>
+                                <div class="v-step-content">
+                                    <h5>故障检测</h5>
+                                    <p>专业设备全面诊断</p>
+                                </div>
+                                <div class="v-step-status"><i class="fas fa-check"></i></div>
+                            </div>
+                            <div class="v-step active">
+                                <div class="v-step-num">02</div>
+                                <div class="v-step-content">
+                                    <h5>方案制定</h5>
+                                    <p>精准定位维修方案</p>
+                                </div>
+                                <div class="v-step-status"><i class="fas fa-check"></i></div>
+                            </div>
+                            <div class="v-step active">
+                                <div class="v-step-num">03</div>
+                                <div class="v-step-content">
+                                    <h5>专业维修</h5>
+                                    <p>原厂级工艺修复</p>
+                                </div>
+                                <div class="v-step-status processing">
+                                    <div class="status-spinner"></div>
+                                </div>
+                            </div>
+                            <div class="v-step">
+                                <div class="v-step-num">04</div>
+                                <div class="v-step-content">
+                                    <h5>严格质检</h5>
+                                    <p>多轮测试确保品质</p>
+                                </div>
+                                <div class="v-step-status"><i class="fas fa-clock"></i></div>
+                            </div>
+                            <div class="v-step">
+                                <div class="v-step-num">05</div>
+                                <div class="v-step-content">
+                                    <h5>交付质保</h5>
+                                    <p>最长三年质保服务</p>
+                                </div>
+                                <div class="v-step-status"><i class="fas fa-clock"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 / 数据统计 -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-visual">
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <div class="about-img-placeholder">
+                                <i class="fas fa-building"></i>
+                                <span>秀源智能科技</span>
+                            </div>
+                        </div>
+                        <div class="about-float-card card-experience">
+                            <div class="float-icon"><i class="fas fa-history"></i></div>
+                            <div class="float-content">
+                                <span class="float-number">10+</span>
+                                <span class="float-label">年行业经验</span>
+                            </div>
+                        </div>
+                        <div class="about-float-card card-team">
+                            <div class="float-icon"><i class="fas fa-users"></i></div>
+                            <div class="float-content">
+                                <span class="float-number">200+</span>
+                                <span class="float-label">专业工程师</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">关于我们</span>
+                    <h2 class="section-title">杭州秀源智能科技有限公司</h2>
+                    <p class="about-text">
+                        杭州秀源智能科技有限公司是一家专注于GPU硬件服务与算力解决方案的高新技术企业。公司总部位于杭州，业务辐射全国，服务客户涵盖互联网、人工智能、科研院所、游戏娱乐等多个领域。
+                    </p>
+                    <p class="about-text">
+                        我们拥有先进的维修设备、专业的技术团队和完善的质控体系，致力于为客户提供高效、可靠的GPU维修与算力服务。凭借过硬的技术实力和优质的服务口碑，秀源智能已成为众多知名企业的长期合作伙伴。
+                    </p>
+                    <div class="about-mission">
+                        <div class="mission-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>工厂化批量维修，原厂级交付标准，最长质保三年。</p>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            联系我们
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据展示 -->
+    <section class="data-section">
+        <div class="container">
+            <div class="data-grid">
+                <div class="data-card">
+                    <div class="data-icon"><i class="fas fa-microchip"></i></div>
+                    <div class="data-number" data-count="50000">0</div>
+                    <div class="data-suffix">+</div>
+                    <div class="data-label">累计维修显卡</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="data-number" data-count="98">0</div>
+                    <div class="data-suffix">%</div>
+                    <div class="data-label">维修成功率</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-icon"><i class="fas fa-building"></i></div>
+                    <div class="data-number" data-count="500">0</div>
+                    <div class="data-suffix">+</div>
+                    <div class="data-label">服务企业客户</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-icon"><i class="fas fa-clock"></i></div>
+                    <div class="data-number" data-count="24">0</div>
+                    <div class="data-suffix">h</div>
+                    <div class="data-label">快速响应服务</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户案例 -->
+    <section class="cases" id="cases">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">客户案例</span>
+                <h2 class="section-title">服务过的客户</h2>
+                <p class="section-desc">
+                    已为超过500家企业客户提供专业服务，涵盖互联网、AI、科研、游戏等多个行业
+                </p>
+            </div>
+            <div class="cases-tabs">
+                <button class="case-tab active" data-tab="internet">互联网</button>
+                <button class="case-tab" data-tab="ai">人工智能</button>
+                <button class="case-tab" data-tab="research">科研院所</button>
+                <button class="case-tab" data-tab="game">游戏娱乐</button>
+            </div>
+            <div class="cases-content">
+                <div class="case-panel active" id="panel-internet">
+                    <div class="case-card">
+                        <div class="case-image">
+                            <div class="case-img-placeholder">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                        </div>
+                        <div class="case-info">
+                            <span class="case-tag">互联网</span>
+                            <h3>某头部云服务商GPU集群维保项目</h3>
+                            <p>为该云服务商提供超过2000片GPU显卡的年度维保服务，包括定期巡检、故障维修、性能优化等，保障其AI算力平台的稳定运行。</p>
+                            <div class="case-meta">
+                                <span><i class="fas fa-microchip"></i> 2000+ 片显卡</span>
+                                <span><i class="fas fa-calendar"></i> 年度合约</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-panel" id="panel-ai">
+                    <div class="case-card">
+                        <div class="case-image">
+                            <div class="case-img-placeholder">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="case-info">
+                            <span class="case-tag">人工智能</span>
+                            <h3>某AI大模型公司算力租赁方案</h3>
+                            <p>为AI大模型训练提供A100/H100集群算力租赁服务，支持千卡级并行训练，助力客户快速迭代大模型产品。</p>
+                            <div class="case-meta">
+                                <span><i class="fas fa-server"></i> 千卡集群</span>
+                                <span><i class="fas fa-calendar"></i> 长期合作</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-panel" id="panel-research">
+                    <div class="case-card">
+                        <div class="case-image">
+                            <div class="case-img-placeholder">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                        </div>
+                        <div class="case-info">
+                            <span class="case-tag">科研院所</span>
+                            <h3>某高校超算中心显卡维修项目</h3>
+                            <p>为高校超算中心批量维修故障显卡，修复率高达95%以上，为学校节省大量设备采购经费，获得校方高度认可。</p>
+                            <div class="case-meta">
+                                <span><i class="fas fa-microchip"></i> 500+ 片修复</span>
+                                <span><i class="fas fa-percentage"></i> 95% 修复率</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-panel" id="panel-game">
+                    <div class="case-card">
+                        <div class="case-image">
+                            <div class="case-img-placeholder">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                        </div>
+                        <div class="case-info">
+                            <span class="case-tag">游戏娱乐</span>
+                            <h3>某电竞酒店显卡供货与维保</h3>
+                            <p>为连锁电竞酒店提供显卡批量供货及长期维保服务，确保酒店高端游戏体验，降低设备故障率。</p>
+                            <div class="case-meta">
+                                <span><i class="fas fa-store"></i> 50+ 家门店</span>
+                                <span><i class="fas fa-handshake"></i> 战略合作</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作伙伴 -->
+    <section class="partners">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">合作伙伴</span>
+                <h2 class="section-title">信赖我们的伙伴</h2>
+                <p class="section-desc">
+                    与国内外知名品牌建立长期稳定的合作关系
+                </p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-item"><span class="partner-name">NVIDIA</span></div>
+                <div class="partner-item"><span class="partner-name">AMD</span></div>
+                <div class="partner-item"><span class="partner-name">Intel</span></div>
+                <div class="partner-item"><span class="partner-name">ASUS</span></div>
+                <div class="partner-item"><span class="partner-name">MSI</span></div>
+                <div class="partner-item"><span class="partner-name">Gigabyte</span></div>
+                <div class="partner-item"><span class="partner-name">Colorful</span></div>
+                <div class="partner-item"><span class="partner-name">Sapphire</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新闻动态 -->
+    <section class="news" id="news">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">新闻动态</span>
+                <h2 class="section-title">秀源资讯</h2>
+                <p class="section-desc">
+                    了解秀源智能的最新动态、行业洞察与技术分享
+                </p>
+            </div>
+            <div class="news-list">
+                <a href="#" class="news-item">
+                    <div class="news-date">
+                        <span class="news-day">15</span>
+                        <span class="news-month">2026.04</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>秀源智能完成A轮融资，加速GPU维修服务全国布局</h3>
+                        <p>本轮融资将用于扩建维修工厂、引进先进设备、拓展服务网络，为更多客户提供优质的GPU维修与算力服务。</p>
+                    </div>
+                    <div class="news-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+                <a href="#" class="news-item">
+                    <div class="news-date">
+                        <span class="news-day">08</span>
+                        <span class="news-month">2026.04</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>秀源智能推出"算力无忧"企业级维保计划</h3>
+                        <p>面向企业客户推出全新的年度维保计划，包含定期巡检、优先维修、备用机服务等权益，让企业算力设备运行无忧。</p>
+                    </div>
+                    <div class="news-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+                <a href="#" class="news-item">
+                    <div class="news-date">
+                        <span class="news-day">22</span>
+                        <span class="news-month">2026.03</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>秀源智能参加2026中国国际GPU技术大会</h3>
+                        <p>作为GPU维修服务领域的代表企业，秀源智能受邀参加本次大会，与行业专家共同探讨GPU技术的发展趋势。</p>
+                    </div>
+                    <div class="news-arrow"><i class="fas fa-arrow-right"></i></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 区域 -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-particles"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>秀源智修，算力无忧</h2>
+                <p>无论您是需要显卡维修、设备维保、算力租赁还是显卡供货，秀源智能都将为您提供专业、高效、可靠的服务。</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-white btn-lg">
+                        立即咨询
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:400-888-8888" class="btn btn-outline-white btn-lg">
+                        <i class="fas fa-phone-alt"></i>
+                        400-888-8888
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 / Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="logo-icon">
+                                <svg viewBox="0 0 48 48" fill="none">
+                                    <rect x="4" y="12" width="40" height="24" rx="4" fill="url(#footerLogoGrad)" opacity="0.9"/>
+                                    <rect x="8" y="16" width="14" height="16" rx="2" fill="rgba(255,255,255,0.25)"/>
+                                    <rect x="26" y="16" width="14" height="16" rx="2" fill="rgba(255,255,255,0.15)"/>
+                                    <circle cx="15" cy="24" r="3" fill="white"/>
+                                    <circle cx="33" cy="24" r="3" fill="white" opacity="0.5"/>
+                                    <defs>
+                                        <linearGradient id="footerLogoGrad" x1="4" y1="12" x2="44" y2="36">
+                                            <stop stop-color="#0ea5e9"/>
+                                            <stop offset="1" stop-color="#0284c7"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-name">秀源智能</span>
+                                <span class="logo-en">XIUYUAN INTELLIGENT</span>
+                            </div>
+                        </div>
+                        <p class="footer-desc">
+                            专业GPU维修与算力服务提供商，致力于为客户提供高效、可靠的硬件服务与算力解决方案。
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>服务项目</h4>
+                        <ul>
+                            <li><a href="#services">显卡维修</a></li>
+                            <li><a href="#services">设备维保</a></li>
+                            <li><a href="#services">算力租赁</a></li>
+                            <li><a href="#services">显卡供货</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>关于秀源</h4>
+                        <ul>
+                            <li><a href="#about">公司介绍</a></li>
+                            <li><a href="#cases">客户案例</a></li>
+                            <li><a href="#news">新闻动态</a></li>
+                            <li><a href="#contact">加入我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>联系我们</h4>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>浙江省杭州市余杭区<br>未来科技城</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>400-888-8888</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@xiuyuan.tech</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>周一至周日 9:00-21:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>© 2026 杭州秀源智能科技有限公司 版权所有</p>
+                    <p>浙ICP备XXXXXXXX号-1 | 浙公网安备 XXXXXXXXXXXX号</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部 -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+</body>
+</html>
